@@ -1,7 +1,9 @@
 # Примеры использования zarbo-viewer
 
 [![N|Solid](https://api.zarbo.tech/static/zarbo/zarbo-logo-min.png)](https://zarbo.tech)
-[Примеры](#Примеры)
+[Примеры]
+
+(#Примеры)
 
 ## Features
 
@@ -19,8 +21,8 @@
 
 ## Примеры
 
-[Стандартное использование]()
-[Изменение материалов внутри iframe]()
+[Стандартное использование](https://github.com/zarbo-tech/zarbo-viewer-examples/blob/main/iframe.html)
+[Изменение материалов внутри iframe](https://github.com/zarbo-tech/zarbo-viewer-examples/blob/main/iframe-change-material.html)
 
 ## License
 
