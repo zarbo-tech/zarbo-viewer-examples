@@ -1,9 +1,8 @@
 # Примеры использования zarbo-viewer
 
 [![N|Solid](https://api.zarbo.tech/static/zarbo/zarbo-logo-min.png)](https://zarbo.tech)
-[Примеры]
 
-(#Примеры)
+[Примеры](#Примеры)
 
 ## Features
 
