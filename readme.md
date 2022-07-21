@@ -20,8 +20,8 @@
 
 ## Примеры
 
-[Стандартное использование](https://github.com/zarbo-tech/zarbo-viewer-examples/blob/main/iframe.html)
-[Изменение материалов внутри iframe](https://github.com/zarbo-tech/zarbo-viewer-examples/blob/main/iframe-change-material.html)
+- [Стандартное использование](https://github.com/zarbo-tech/zarbo-viewer-examples/blob/main/iframe.html)
+- [Изменение материалов внутри iframe](https://github.com/zarbo-tech/zarbo-viewer-examples/blob/main/iframe-change-material.html)
 
 ## License
 
