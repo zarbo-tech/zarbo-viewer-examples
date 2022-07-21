@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>change material</title>
+</head>
+<body>
+  <iframe name="testMessage" src="https://api.zarbo.tech/api/v1/widgets/render/180/" frameborder="0" width="700" height="800"></iframe><br>
+  <button onclick="sendMessage('AK-100')">MATER 1</button>
+  <button onclick="sendMessage('BL-100')">MATER 2</button>
+  <button onclick="sendMessage('AK-200')">MATER 3</button>
+  <button onclick="sendMessage('WH-200')">MATER 4</button>
+  <button onclick="sendMessage('WH-100')">MATER 5</button>
+  <button onclick="sendMessage('BK-200')">MATER 6</button>
+  <button onclick="sendMessage('OAK-200')">MATER 7</button>
+</body>
+<script>
+  function sendMessage (codename) {
+    let data = {
+      type: 'change-material',
+      codename
+    }
+    let el = window.frames.testMessage
+    el.postMessage(data, '*')
+  }
+</script>
+</html>
