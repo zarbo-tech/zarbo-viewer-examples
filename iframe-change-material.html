@@ -7,9 +7,17 @@
   <title>change material</title>
 </head>
 <body>
+<!--   интегрированный iframe -->
   <iframe name="testMessage" src="https://api.zarbo.tech/api/v1/widgets/render/180/" frameborder="0" width="700" height="800"></iframe><br>
+
+<!--   ниже кнопки на сайте заказчика -->
+<!--   меняем один материал -->
   <button onclick="sendMessage('AK-100')">MATER 1</button>
-  <button onclick="sendMessage('BL-100')">MATER 2</button>
+
+<!--   меняем сразу несоклько материалов -->
+  <button onclick="sendMessage(['BL-100', 'AK-100'])">MATER 2</button>
+
+<!--   просто аналогичные кнопки -->
   <button onclick="sendMessage('AK-200')">MATER 3</button>
   <button onclick="sendMessage('WH-200')">MATER 4</button>
   <button onclick="sendMessage('WH-100')">MATER 5</button>
@@ -17,13 +25,13 @@
   <button onclick="sendMessage('OAK-200')">MATER 7</button>
 </body>
 <script>
-  function sendMessage (codename) {
-    let data = {
-      type: 'change-material',
-      codename
+  function sendMessage (codename) { // функция которая вызывается по нажатию на кнопку
+    let data = { // объект колторый передаем виджету
+      type: 'change-material', // тип события(просто оставить без изменений)
+      codename // строка или массив строк, значением строк являются коды материалов заданные на 3ем шаге в ЛК зарбо
     }
-    let el = window.frames.testMessage
-    el.postMessage(data, '*')
+    let el = window.frames.testMessage // testMessage - значние атрибута name у iframe
+    el.postMessage(data, '*') // отправка сообщения на смену запроса
   }
 </script>
 </html>
